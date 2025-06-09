@@ -1,0 +1,182 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.377 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.344 seconds]
+
+▲ [WARNING] TS-998113: All imports are unused [plugin angular-compiler]
+
+    src/app/app.component.ts:6:2:
+      6 │   imports: [RouterOutlet],
+        ╵   ~~~~~~~
+
+
+✘ [ERROR] NG8001: 'taskease-main' is not a known element:
+1. If 'taskease-main' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'taskease-main' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:337:0:
+      337 │ <taskease-main></taskease-main>
+          ╵ ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.622 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/taskease-main/taskease-main.component.html:26:9:
+      26 │     <li *ngFor="let task of tasks; let i = index" [class.completed...
+         ╵          ~~~~~
+
+  Error occurs in the template of component TaskeaseMainComponent.
+
+    src/app/taskease-main/taskease-main.component.ts:9:15:
+      9 │   templateUrl: './taskease-main.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/taskease-main/taskease-main.component.html:41:9:
+      41 │     <li *ngIf="tasks.length === 0" class="empty-list-notice">
+         ╵          ~~~~
+
+  Error occurs in the template of component TaskeaseMainComponent.
+
+    src/app/taskease-main/taskease-main.component.ts:9:15:
+      9 │   templateUrl: './taskease-main.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.327 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/taskease-main/taskease-main.component.html:26:9:
+      26 │     <li *ngFor="let task of tasks; let i = index" [class.completed...
+         ╵          ~~~~~
+
+  Error occurs in the template of component TaskeaseMainComponent.
+
+    src/app/taskease-main/taskease-main.component.ts:9:15:
+      9 │   templateUrl: './taskease-main.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/taskease-main/taskease-main.component.html:41:9:
+      41 │     <li *ngIf="tasks.length === 0" class="empty-list-notice">
+         ╵          ~~~~
+
+  Error occurs in the template of component TaskeaseMainComponent.
+
+    src/app/taskease-main/taskease-main.component.ts:9:15:
+      9 │   templateUrl: './taskease-main.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.446 seconds]
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  12.07 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 102.37 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-72IBYYLH.mjs   | -                |  12.51 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.314 seconds]
+
+6:55:08 AM [vite] (ssr) ✨ new dependencies optimized: @angular/forms
+6:55:08 AM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
